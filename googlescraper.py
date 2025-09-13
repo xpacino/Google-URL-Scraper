@@ -6,14 +6,12 @@ OX_API_USER = "APİ USERNAME"
 OX_API_KEY = "APİ KEY"
 OX_API_URL = "https://realtime.oxylabs.io/v1/queries"
 
-# Kullanıcıdan input al
 query = input("Aramak istediğiniz anahtar kelimeyi girin: ")
 num_pages = int(input("Kaç sayfa aramak istiyorsunuz?: "))
 geo_location = input("Hangi ülkede arama yapılacak? (örn. Turkey, United States): ")
 
 all_urls = []
 
-# Nested URL'leri çıkaran fonksiyon
 def extract_urls(obj):
     urls = []
     if isinstance(obj, dict):
@@ -47,9 +45,7 @@ for page in range(1, num_pages + 1):
     urls = extract_urls(data)
     all_urls.extend(urls)
 
-# JSON dosyasına kaydet
 with open("urls.json", "w") as f:
     json.dump(all_urls, f, indent=2)
 
-# Ekrana sadece kaç URL çekildiğini yazdır
 print(f"{len(all_urls)} adet URL çekildi ve urls.json dosyasına kaydedildi.")
