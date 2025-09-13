@@ -49,7 +49,7 @@ Kütüphaneyi yüklemek için:
 
 
 
-## Geliştirici
+## Developer
 
 - [@xpacino](https://www.github.com/xpacino) 
 
