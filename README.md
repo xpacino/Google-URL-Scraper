@@ -31,7 +31,7 @@ Oxylabs API Basic Auth kullanır. Kullanıcı adı ve API anahtarınızı alıp 
 | Python Değişkeni | Atanan Değer                                    |
 | :--------------- | :---------------------------------------------- |
 | `OX_API_USER`    | `"USERNAME_645F3"`                              |
-| `OX_API_KEY`     | `"PASSWORD_2453"`                               |
+| `OX_API_KEY`     | `"APİ_KEY"`                               |
 | `OX_API_URL`     | `"https://realtime.oxylabs.io/v1/queries"`      |
 
 
